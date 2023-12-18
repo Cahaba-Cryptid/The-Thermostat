@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dta656wpywj6f"]
+
+[ext_resource type="Texture2D" uid="uid://7a8olbkejh38" path="res://Images/Thermostat.png" id="1_xan37"]
+[ext_resource type="Script" path="res://Thermostat.gd" id="2_jasp0"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Thermostat" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(320, 180)
+texture = ExtResource("1_xan37")
+script = ExtResource("2_jasp0")
