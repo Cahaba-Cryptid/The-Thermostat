@@ -10,3 +10,34 @@ texture_filter = 1
 position = Vector2(320, 180)
 texture = ExtResource("1_xan37")
 script = ExtResource("2_jasp0")
+metadata/_edit_lock_ = true
+
+[node name="TempUpButton" type="Button" parent="Thermostat"]
+offset_left = 122.0
+offset_top = -117.0
+offset_right = 277.0
+offset_bottom = -58.0
+
+[node name="ModeButton" type="Button" parent="Thermostat"]
+offset_left = 122.0
+offset_top = -40.0
+offset_right = 277.0
+offset_bottom = 19.0
+
+[node name="TempDownButton" type="Button" parent="Thermostat"]
+offset_left = 122.0
+offset_top = 38.0
+offset_right = 277.0
+offset_bottom = 97.0
+
+[node name="IndoorTempLabel" type="Label" parent="Thermostat"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -275.0
+offset_top = -49.0
+offset_right = -143.0
+offset_bottom = -18.0
+text = "Indoor Temp: 0"
+
+[connection signal="pressed" from="Thermostat/TempUpButton" to="Thermostat" method="_on_temp_up_button_pressed"]
+[connection signal="pressed" from="Thermostat/ModeButton" to="Thermostat" method="_on_mode_button_pressed"]
+[connection signal="pressed" from="Thermostat/TempDownButton" to="Thermostat" method="_on_temp_down_button_pressed"]
